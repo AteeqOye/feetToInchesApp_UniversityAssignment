@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:text="@string/convert_feet_to_inches"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_title"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/inputFeet"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:hint="@string/enter_feet_value"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/feetConverterBtn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:fontFamily="serif"
+            android:background="@drawable/rounded_bg"
+            android:text="@string/click_me" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
